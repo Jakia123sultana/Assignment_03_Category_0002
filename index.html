@@ -1,0 +1,413 @@
+    
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+       <meta charset="UTF-8" />
+       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       <title>Document</title>
+       <script src="https://kit.fontawesome.com/351b7f8b14.js" crossorigin="anonymous"></script>
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+   <!-- DaisyUI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      
+.sora {
+    font-family: "Sora", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+              'bike-primary': '#E76F51',
+              'bike-primary-bg': 'rgba(231, 111, 81, 0.1)',
+            },
+          },
+        },
+      }
+    </script>
+  </head>
+  <body class="sora">
+    <!-- Header Section -->
+    <header class=" bg-[#EFEBE3]">
+      <nav class="mb-16 bg-[#EFEBE3]"  >
+        <div class="navbar bg-base-100 flex justify-between">
+       
+            <div class="flex justify-between items-center w-full lg:w-1/5">
+                <div>
+                    <img class="w-3/4 hidden lg:block " src="/c2-assets/logo-header.png" />
+                    <img class="w-3/4 lg:hidden sm:block" src="/c2-assets/logo-footer.png" />
+                </div>
+                <div class="dropdown">
+                  <div tabindex="0" role="button" class="btn btn-ghost lg:hidden text-green-700">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 6h16M4 12h8m-8 6h16"
+                      />
+                    </svg>
+                  </div>
+                 
+                </div>
+             
+              </div>
+           
+              <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                  <li class="font-normal text-xl"><a>Product</a></li>
+                  <li class="font-normal text-xl"><a>Services</a></li>
+                  <li class="font-normal text-xl"><a>Contact us</a></li>
+                
+                </ul>
+              </div>
+              <div class="hidden lg:flex gap-6">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <button class="btn btn-outline btn-success px-8 py-2">Login</button>
+
+                <a class="btn bg-[#179800] text-white px-8 py-2">Register</a>
+              </div>
+         </div>
+        </div>
+        <hr class="my-4 border-[#179800] lg:hidden">
+      </nav>
+      <div class="mt-16 space-y-6">
+        <h1 class="font-semibold text-4xl text-center">Freshness <span class="text-[#179800]">You Can<br>
+            Count</span> On, Prices You’ll Love!<h1>
+                <p class="font-normal text-xl text-center text-[#111111] opacity-65">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br>staples, we’ve got you covered every day!</p>
+               <marquee class="animate-bounce text-xl font-semibold text-black-500 mt-3">Animation is going</marquee>
+                <img class=" m-auto pt-20 px-56 sm:max-w-full px-8"src="/c2-assets/hero-vegetables.png" />
+            </div>
+    </header>
+    <main>
+      <section class="container mx-auto px-5   mt-32 mb-10 lg:px-10">
+        <h1 class="text-3xl font-semibold text-green-600 mb-10 lg:px-7">Services</h1>
+        <div class="space-y-7 lg:flex gap-5 items-stretch">
+       
+          <div class="card bg-[#EFEBE3] shadow-xl w-96 p-1 h-80 flex flex-col mt-6">
+            <figure>
+              <img class="  bg-white p-4 mt-3 rounded-full  w-24"src="/c2-assets/service.png" />
+            </figure>
+            <div class="card-body space-y-2 flex  flex-1 flex-col justify-center items-center ml-11">
+              <div >
+                <h2 class="card-title  -mt-15 mb-3">24/7 Services </h2>
+              <p>
+                Provide table service, where <br>servers take  orders and deliver food . A mix between full-service and quick-service restaurants 
+              </p>
+            </div>
+             
+            </div>
+          </div>
+          <div class="card bg-[#EFEBE3] shadow-xl w-96 p-1 h-80 flex flex-col mt-6">
+            <figure>
+              <img class="  bg-white p-4 mt-3 rounded-full  w-24"src="/c2-assets/delivery.png" />
+            </figure>
+            <div class="card-body space-y-2 flex  flex-1 flex-col justify-center items-center ml-11">
+              <div >
+                <h2 class="card-title  -mt-15 mb-3">Fast Delivery </h2>
+              <p>
+                Provide table service, where <br>servers take  orders and deliver food . A mix between full-service and quick-service restaurants 
+              </p>
+            </div>
+             
+            </div>
+          </div>
+          <div class="card bg-[#EFEBE3] shadow-xl w-96 p-1 h-80 flex flex-col mt-6">
+            <figure>
+              <img class="  bg-white p-4 mt-3 rounded-full  w-24"src="/c2-assets/healthy.png" />
+            </figure>
+            <div class="card-body space-y-2 flex  flex-1 flex-col justify-center items-center ml-11">
+              <div >
+                <h2 class="card-title  -mt-15 mb-3 text-center">Healthy Products  </h2>
+              <p>
+                Provide table service, where <br>servers take  orders and deliver food . A mix between full-service and quick-service restaurants 
+              </p>
+            </div>
+             
+            </div>
+          </div>
+        
+      </div>
+        
+      </section>
+      <section class="bg-[#EFEBE3] py-36">
+        <h1 class="text-3xl font-semibold text-green-600 mb-10 lg:pl-24 pl-10">Popular Products</h1>
+       <div class=" space-y-4 lg:flex ">
+        <div class=" container mx-auto pl-8 lg:pl-20">
+          <div class="card  shadow-xl w-96 p-1 h-80 flex flex-col mt-6 bg-gradient-to-l  from-[#FFFFFF]  to-[#53DB3A]">
+           
+            <div class="card-body space-y-0 ">
+              <h2 class="card-title text-white pt-3  ">30% off</h2>
+              <p>
+               Discover a world of treats,toys and essntials handpacked for
+              </p>
+              <div class="card-actions">
+                <button class="btn bg-white text-black font-normal text-sm py-2 px-5">
+                  Buy Now
+                </button>
+                <figure>
+                  <img class="w-36"src="/c2-assets/vegetable-offer.png"/>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class=" grid sm:grid-cols-2 pl-20 lg:grid-cols-3 w-full  gap-8 pr-28  "  >
+          <div class="flex justify-between items-center bg-white w-44 rounded-md pl-1 pr-1 py-1 gap-1">
+            <img class="bg-[#EFEBE3] w-2/5"src="/c2-assets/onion.png" />
+            <div>
+              <div class="flex gap-1">
+                <i class="fa-solid fa-star text-orange-500"></i>
+                <h1> 4.5 </h1>
+              </div>
+              <h1>Onion 1 KG</h1>
+              <p>$39.99</p>
+            </div>
+          </div>
+          <div class="flex justify-between items-center bg-white w-44 rounded-md pl-1 pr-1 py-1 gap-1">
+            <img class="bg-[#EFEBE3] w-2/5"src="/c2-assets/potato.png" />
+            <div>
+              <div class="flex gap-1">
+                <i class="fa-solid fa-star text-orange-500"></i>
+                <h1> 4.5 </h1>
+              </div>
+              <h1>Onion 1 KG</h1>
+              <p>$39.99</p>
+            </div>
+          </div>
+          <div class="flex justify-between items-center bg-white w-44 rounded-md pl-1 pr-1 py-1 gap-1">
+            <img class="bg-[#EFEBE3] w-2/5"src="/c2-assets/tomato.png" />
+            <div>
+              <div class="flex gap-1">
+                <i class="fa-solid fa-star text-orange-500"></i>
+                <h1> 4.5 </h1>
+              </div>
+              <h1>Onion 1 KG</h1>
+              <p>$39.99</p>
+            </div>
+          </div>
+          <div class="flex justify-between items-center bg-white w-44 rounded-md pl-1 pr-1 py-1 gap-1">
+            <img class="bg-[#EFEBE3] w-2/5"src="/c2-assets/onion.png" />
+            <div>
+              <div class="flex gap-1">
+                <i class="fa-solid fa-star text-orange-500"></i>
+                <h1> 4.5 </h1>
+              </div>
+              <h1>Onion 1 KG</h1>
+              <p>$39.99</p>
+            </div>
+          </div>
+          <div class="flex justify-between items-center bg-white w-44 rounded-md pl-1 pr-1 py-1 gap-1">
+            <img class="bg-[#EFEBE3] w-2/5"src="/c2-assets/potato.png" />
+            <div>
+              <div class="flex gap-1">
+                <i class="fa-solid fa-star text-orange-500"></i>
+                <h1> 4.5 </h1>
+              </div>
+              <h1>Onion 1 KG</h1>
+              <p>$39.99</p>
+            </div>
+          </div>
+          <div class="flex justify-between items-center bg-white w-44 rounded-md pl-1 pr-1 py-1 gap-1">
+            <img class="bg-[#EFEBE3] w-2/5"src="/c2-assets/tomato.png" />
+            <div>
+              <div class="flex gap-1">
+                <i class="fa-solid fa-star text-orange-500"></i>
+                <h1> 4.5 </h1>
+              </div>
+              <h1>Onion 1 KG</h1>
+              <p>$39.99</p>
+            </div>
+          </div>
+          <div class="flex justify-between items-center bg-white w-44 rounded-md pl-1 pr-1 py-1 gap-1">
+            <img class="bg-[#EFEBE3] w-2/5"src="/c2-assets/onion.png" />
+            <div>
+              <div class="flex gap-1">
+                <i class="fa-solid fa-star text-orange-500"></i>
+                <h1> 4.5 </h1>
+              </div>
+              <h1>Onion 1 KG</h1>
+              <p>$39.99</p>
+            </div>
+          </div>
+          <div class="flex justify-between items-center bg-white w-44 rounded-md pl-1 pr-1 py-1 gap-1">
+            <img class="bg-[#EFEBE3] w-2/5"src="/c2-assets/potato.png" />
+            <div>
+              <div class="flex gap-1">
+                <i class="fa-solid fa-star text-orange-500"></i>
+                <h1> 4.5 </h1>
+              </div>
+              <h1>Onion 1 KG</h1>
+              <p>$39.99</p>
+            </div>
+          </div>
+          <div class="flex justify-between items-center bg-white w-44 rounded-md pl-1 pr-1 py-1 gap-1">
+            <img class="bg-[#EFEBE3] w-2/5"src="/c2-assets/tomato.png" />
+            <div>
+              <div class="flex gap-1">
+                <i class="fa-solid fa-star text-orange-500"></i>
+                <h1> 4.5 </h1>
+              </div>
+              <h1>Onion 1 KG</h1>
+              <p>$39.99</p>
+            </div>
+          </div>
+         
+        </div>
+       </div>
+      </section>
+
+      <section class="py-36">
+        <h1 class="text-3xl font-semibold text-green-600 mb-10 lg:pl-24 pl-10">Arrival & Offers</h1>
+       
+        <div class=" gap-10 lg:flex space-y-5 ">
+          <div class="flex justify-between items-center bg-[#115414] max-w-2xl h-66 px-10 py-10 rounded-3xl container mx-auto lg:ml-10 mt-5">
+            <div>
+              
+              <img src="/c2-assets/dawat-logo.png" />
+              <button class="text-white text-sm py-3 px-5 bg-[#63B76D] rounded-xl  my-5 ml-7 font-normal ">Cook Exotic Dishes</button>
+              <h1 class="text-white font-normal text-xl ml-7">UP to <span class="font-bold">20% OFF</span><h1>
+            </div>
+            <div>
+              <img src="/c2-assets/dawat-mock-up.png" />
+            </div>
+          </div>
+          <div class="flex justify-between items-center bg-[#102861] max-w-3xl h-66 px-10 py-10 rounded-3xl container mx-auto mr-10 lg:w-4/6 mr-20">
+            <div>
+              
+              <img class="ml-12" src="/c2-assets/india-gate-logo.png" />
+              <button class="text-white text-sm py-3 px-5 bg-[#63B76D] rounded-xl  my-5 ml-7 font-normal ">World’s No.1 Rice</button>
+              <h1 class="text-white font-normal text-xl ml-7">UP to <span class="font-bold">40% OFF</span><h1>
+            </div>
+            <div>
+              <img src="/c2-assets/india-gate-mock-up.png" />
+            </div>
+          </div>
+        </div>
+           
+           
+            
+     
+      </section>
+      
+    </main>
+    <div class="relative">
+      <section class="container mx-auto rounded-3xl  -mb-24 overflow-visible relative z-10">
+        <div class=" lg:flex justify-around items-center rounded-2xl bg-[#EFEBE3] p-16 ">
+          <div>
+            <img class="pl-20 w-4/6 
+           "src="/c2-assets/vegetable-busket.png" />
+          </div>
+          <div class="flex justify-center items-center lg:pr-24 ">
+            <div>
+            <h1 class="font-semibold text-2xl text-[#179800] mb-3 lg:text-black">Get Grocery News!</h1>
+            <p class="mb-3">Exclusive training tips, ticks, product deals and more.<p>
+            <input
+            type="text"
+            placeholder="Enter  email"
+            class="bg-white py-3 px-16 text-start text-sm rounded-xl"
+          
+          /><br>
+          <button class="btn bg-[#179800] text-white px-8 py-1 mt-5">Subscribe</button>
+            </div>
+        </div>
+       
+          </div>
+        </div>
+      </section>
+      <footer class="footer bg-[#179800] text-white p-24 relative overflow-visible z-0">
+        <aside>
+          <img class="w-4/6 p-2 rounded " src="/c2-assets/logo-header.png" />
+          <p>
+            Discover a world of treats, toys, and<br> essentials handpicked for your furry<br> friends
+          </p>
+        </aside>
+        <div>
+          <ul class="menu menu-horizontal px-1 flex-col mt-3 gap-3 lg:mt-10">
+            <li class="font-normal text-sm text-white"><a>Product</a></li>
+            <li class="font-normal text-sm text-white"><a>Services</a></li>
+            <li class="font-normal text-sm text-white"><a>Contact us</a></li>
+          
+          </ul>
+        </div>
+        <nav class="mt-3 pl-3 lg:pt-32">
+          <h6 class="footer-title font-normal text-sm text-white">Follow us</h6>
+          <div class="grid grid-flow-col gap-4">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </nav>
+     
+      </footer>
+  </div>
+  <div class="container mx-auto p-24 bg-[#EFEBE3] space-y-5 mt-24 rounded-2xl">
+    <div class="collapse collapse-arrow border border-green-950">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title text-xl font-medium">
+       Where do you source your vegetables from?
+      </div>
+      <div class="collapse-content">
+        <p>
+       We source fresh,organic vegetables directly from local farms to ensure the highest quality and freshness.
+        </p>
+      </div>
+    </div>
+    <div class="collapse collapse-arrow border  border-green-950">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title text-xl font-medium">
+        Do you Offer home delivery?
+      </div>
+      <div class="collapse-content">
+        <p>
+         Yes! We provide fast and reliable home delivery so you can enjoy farm-fresh vegetables at your doorstep.
+        </p>
+      </div>
+    </div>
+    <div class="collapse collapse-arrow border  border-green-950">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title text-xl font-medium">
+       how do I store fresh vegetables to keep them longer?
+      </div>
+      <div class="collapse-content">
+        <p>
+        Store leafy greens in airtight containers with a paper towel,and keep root vegetables in a cool ,dry place.
+        </p>
+      </div>
+    </div>
+    <div class="collapse collapse-arrow border  border-green-950">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title text-xl font-medium">
+       Are your vegetables organic and pesticide-free?
+      </div>
+      <div class="collapse-content">
+        <p>
+         Yes
+        </p>
+      </div>
+    </div>
+  </div>
+  </body>
+      </html>
